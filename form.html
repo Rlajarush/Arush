@@ -6,15 +6,20 @@
     <title>HTML form</title>
 </head>
 <body>
+    <!-- <center="true">
     <form action="submit_form" method="post">
+       
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" placeholder="name" required><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="email" required><br><br>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+        <input type="number" id="age" name="age" placeholder="age" min="1" max="120" required><br><br>
+
+        <lebel for="password">password:</lebel>
+        <input type="password" id="password" name="password" placeholder="password" required><br><br>
 
         <label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
@@ -23,5 +28,42 @@
             <option value="female">Female</option>
             <option value="other">Other</option>
         </select><br><br>
+        <input type="submit" value="Submit" placeholder="submit">
+    </form>
+    </table>-->
+    <table border="4">
+        <center>
+    <form action="submit_form" method="post">
+        <tr><th colspan="4">User Information Form</th></tr>
+       <tr>
+        <th><label for="name">Your Name:</label></th>
+        <th><label for="email">Email:</label></th>
+        <th><label for="age">Age:</label></th>
+        <th><lebel for="password">password:</lebel></th>
+       </tr>
+
+       <tr>
+        <td><input type="text" id="name" name="name" placeholder="name" required></td>
+        <td><input type="email" id="email" name="email" placeholder="email" required></td>
+        <td><input type="number" id="age" name="age" placeholder="age" min="1" max="120" required></td>
+        <td><input type="password" id="password" name="password" placeholder="password" required></td>
+       </tr>
+
+        <tr>
+            <th><label for="gender">Gender:</label></th>
+        </tr>
+        <tr>
+            <td>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select></td>
+        <td colspan="4" align="center"><input type="submit" value="Submit" placeholder="submit"></td>
+        </tr>
+    </form>
+    </center>
+    </table>
 </body>
 </html>
